@@ -4,11 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "babel": "babel -w src --out-dir dist",
     "start": "live-server --entry-file=\"public/index.html\" --port=3000"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/plugin-transform-react-jsx": "^7.20.7",
     "live-server": "^1.2.2"
   }
 }

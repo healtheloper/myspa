@@ -1,3 +1,7 @@
-const app = document.getElementById('app');
+/** @jsx createElement */
+import { createElement } from './core.js';
+import App from './app.js';
 
-app.textContent = 'Hello World';
+const $root = document.querySelector('body');
+
+$root.appendChild(<App />);
